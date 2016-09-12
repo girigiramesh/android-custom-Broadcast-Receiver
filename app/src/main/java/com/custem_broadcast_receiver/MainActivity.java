@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         Intent intent = new Intent();
         intent.setAction("com.custombroadast");
+        intent.putExtra("value",1000);
         sendBroadcast(intent);
     }
 }
